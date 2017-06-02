@@ -1,0 +1,7 @@
+pipeline:
+  build:
+    image: node:7-alpine
+    commands:
+      - yarn
+      - yarn run build -- --prod
+      - yarn run test -- --single-run
